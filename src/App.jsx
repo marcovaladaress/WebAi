@@ -1,4 +1,5 @@
 
+import ArrowUp from "./components/arrow-up";
 import Headertopo from "./components/header";
 
 
@@ -13,10 +14,11 @@ export default function App() {
           <div className="section-container">
           <div className="container-info">
             <div className="infos">
+                <span><p className="collect-info">Collect Nfts</p></span>
                 <h1><span className="title">Discover & Collect</span> The Best NFTs Digital Art</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora veritatis consectetur esse cum neque voluptatibus.</p>
                 <button className="explore-info">Explore Now</button>
-                <button>Sell Now</button>
+               <span> <button className="sell-info">Sell Now <ArrowUp/> </button></span>
             </div>
           </div>
           <div className="container-img">
@@ -31,6 +33,8 @@ export default function App() {
           </div>
         </div>
           </div>
+
+          
       </section>
     </>
 
