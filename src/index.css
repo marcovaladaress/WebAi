@@ -355,6 +355,7 @@ body {
         .container {
             padding: 0;
             
+            
         }
         .header-container {
             display: none;
@@ -373,15 +374,27 @@ body {
             }
         }
 
-        
+        .sell-info {
+            position: absolute;
+           
+        }
 
+       
 
         .card {
             flex:1 1 100%;
             max-width: 100%;
+            
+        }
+
+        .img-monkey {
+            height: 200px;
+        }
+
+        .love-card {
+            display: none;
         }
        
-        
     }
 
    
@@ -490,9 +503,11 @@ body {
     }
 
     .section-container {
+        margin-top: 5rem;
+        padding: 1rem;
         flex-direction: column;
-        width: 75%;
-        max-width: 900px;
+        width: 100%;
+        max-width: 1000px;
 
 
     }
