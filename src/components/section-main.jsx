@@ -1,4 +1,4 @@
-import ArrowUp from "./arrow-up";
+import ArrowUp from "./icon-components/arrow-up";
 
 export default function SectionMain() {
 

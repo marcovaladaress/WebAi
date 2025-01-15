@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Jost", sans-serif;
     padding: 0;
     margin: 0;
 
@@ -88,6 +88,7 @@ body {
     border-radius: 10px;
 
 
+
 }
 
 .section-container {
@@ -100,10 +101,12 @@ body {
 }
 
 .container-info {
-    display: flex;
+    align-items: center;
+    margin-top: 8rem;
     flex-direction: column;
     justify-content: center;
-    padding: 0 3rem;
+
+
 }
 
 .infos {
@@ -112,7 +115,7 @@ body {
 
     & h1 {
         font-size: 3.75rem;
-        font-weight: 800;
+        font-weight: 500;
         color: white;
     }
 
@@ -133,7 +136,7 @@ body {
     -webkit-text-fill-color: transparent;
     display: inline-block;
     font-size: 3.75rem;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 
@@ -178,9 +181,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 0.45rem;
     border-radius: 10px;
-    padding: 0.50rem 2rem;
+    padding: 0.50rem 1rem;
     border: 0.8px solid white;
     background-color: transparent;
     color: white;
@@ -199,6 +201,7 @@ body {
 }
 
 
+/*-----------------FIM SECTION----------------*/
 
 
 
@@ -209,15 +212,19 @@ body {
 
 
 
+
+
+
+
+
+/*-----------------INICIO CARD CATEGORIES----------------*/
 
 
 
 
 
 .container-cards {
-    gap: 2rem;
-    display: flex;
-    flex-wrap: wrap;
+
     color: white;
     max-width: 1236px;
     margin: 1rem auto;
@@ -246,20 +253,18 @@ body {
     }
 }
 
-
 .cards {
-    flex: 1 1 calc(25% - 32px);
-    max-width: calc(25% - 32px);
-
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 
 .card {
     background-color: rgb(0, 0, 0, 0.2);
     width: 290px;
     height: 408px;
     border-radius: .5rem;
-
-
 
 
 }
@@ -341,6 +346,7 @@ body {
 
 
 
+/*-----------------FIM CARDS CATEGORIES----------------*/
 
 
 
@@ -350,107 +356,186 @@ body {
 
 
 
-@media (max-width: 480px) {
 
-        .container {
-            padding: 0;
-            
-            
-        }
-        .header-container {
-            display: none;
-        }
 
-        .container-info {
-            padding: 0;
-        }
+.container-sellers {
 
-        .title{
-            font-size:10px;
-        }
-        .infos {
-            & h1{
-                    font-size: 1rem;
-            }
-        }
+    margin-top: 6rem;
+    
+    
+}
 
-        .sell-info {
-            position: absolute;
-           
-        }
+.top-sellers {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1236px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 1rem;
 
-       
 
-        .card {
-            flex:1 1 100%;
-            max-width: 100%;
-            
-        }
 
-        .img-monkey {
-            height: 200px;
-        }
 
-        .love-card {
-            display: none;
-        }
-       
+
+}
+
+
+.title-sellers {
+
+
+    max-width: 500px;
+
+    & h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: white;
+
     }
 
+    & p {
+        margin-top: 0.4rem;
+        color: white;
+
+    }
+}
+
+
+.button-view {
+
+    border: 1px solid rgb(255 255 255 / .1);
+    background-color: transparent;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: .55rem;
+    cursor: pointer;
+}
+
+
+.button-view:hover {
+    background-color: #6D29D9;
+    transition: 0.8s;
+    
+}
+
+
+.container-null {
+    
+    max-width: 1236px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 1.125rem;
+    margin: 2rem auto;
+    
+}
+
+
+.container-sellers-card {
+
+    background-color: rgb(2 6 23 / .4);
+    max-width: 400px;
+    border-radius: 15px;
    
 
 
+}
+
+
+.img-sellers {
+    display: flex;
+    gap: .6rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dashed 1px rgba(132, 130, 130, 0.468);
 
 
 
 
-
-
-
-
-@media (max-width: 715px) {
-   
-
-    .container-info {
-    
-        padding: 0;
-        max-width: 100%;
-
-    }
-    .title{
-        font-size: 1.46rem;
-       
-
-    } 
-
-    .infos {
-        & h1 {
-            font-size: 1.46rem;
-        }
-
-        & p {
-            font-size: 12px;
-        }
+    & img {
+        width: 29%;
+        border-radius: 10px;
+        object-fit: cover;
     }
 
-    
+
+}
+
+.users-sellers {
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    & img {
+        width: 16%;
+        border-radius: 4rem;
+    }
+
+    & p {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+        color: rgb(241 245 249 / .6);
+    }
+}
+
+
+.info-sellers {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+
+.name-info {
+
+    & h1 {
+        color: white;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-bottom: .5rem;
+    }
+
+    & p {
+        color: white;
+        font-size: .75rem;
+        line-height: 1rem;
+        font-weight: 500;
+    }
 }
 
 
 
 
-@media (max-width: 1045px) {
-
-    .cards {
-        flex: 1 1 1 calc(50% - 32px);
-        max-width: calc(50% - 32px);
-        align-self: center;
-      
-
-    }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -468,13 +553,7 @@ body {
 
     }
 
-    .section-container {
-        flex-direction: column;
-        width: 80%;
-        max-width: 800px;
-
-
-    }
+   
 
     .container {
         max-width: 1000px;
@@ -485,41 +564,166 @@ body {
 
         max-width: 1000px;
     }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
+    .container-img {
+        width: 70%;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 835px) {
+
+ 
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .cards {
+        grid-template-columns:  repeat(3, minmax(0, 1fr));
+        
+        
+    }
+
+    .title {
+        font-size: 2.46rem;
+
+
+    }
+
+    .infos {
+        & h1 {
+            font-size: 2.46rem;
+        }
+
+        & p {
+            font-size: 1rem;
+        }
+    }
+
+
+    .container-null{
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .container-sellers-card {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    
+  
+
 }
 
 
 
 
 
-
-
-
-@media (max-width: 1036px) {
-
-    .header-container {
-
-        max-width: 900px;
-
-    }
-
-    .section-container {
-        margin-top: 5rem;
-        padding: 1rem;
-        flex-direction: column;
-        width: 100%;
-        max-width: 1000px;
-
-
-    }
+@media (max-width: 480px) {
 
     .container {
-        max-width: 990px;
-        margin: 0 auto;
+        padding: 0;
+
+
     }
 
-    .info-contegories {
-
-        max-width: 1000px;
+    .header-container {
+        display: none;
     }
+
+
+    .section-container {
+
+       flex-direction: column;
+    }
+
+  
+
+    .container-info {
+        padding: 0;
+        margin-top: 5rem;
+        margin-left: -1rem;
+
+
+
+    }
+
+    
+
+    .title {
+
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+
+    .infos {
+
+        margin-left: 1.45rem;
+
+        & h1 {
+
+            font-size: 2rem;
+            line-height: 2.75rem;
+        }
+
+        & p {
+
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.115rem;
+            line-height: 1.85rem;
+
+        }
+    }
+
+
+    .sell-info {
+        position: absolute;
+
+    }
+
+
+    .img-monkey {
+        height: 200px;
+    }
+
+    .love-card {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .top-sellers {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+    }
+
+    .title-sellers {
+        max-width: 300px;
+
+        & p {
+            margin-top: 0;
+        }
+    }
+
+
 
 }
