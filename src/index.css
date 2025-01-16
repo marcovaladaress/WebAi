@@ -358,6 +358,11 @@ body {
 
 
 
+
+
+/*-----------------INICIO CARDS SELLERS----------------*/
+
+
 .container-sellers {
 
     margin-top: 6rem;
@@ -517,15 +522,42 @@ body {
 
 
 
+/*-----------------FIM CARDS SELLERS----------------*/
 
 
 
 
 
 
+.container-showcase {
+    
+    max-width: 1236px;
+    margin: 0 auto;
+
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
 
 
+.container-img-showcase{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    overflow: hidden;
+    border-radius: .75rem;
+    
+}
 
+.img-showcasee{
+   
+    & img {
+       max-width: 100%;
+       
+    }
+}
 
 
 

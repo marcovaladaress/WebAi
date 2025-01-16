@@ -1,6 +1,12 @@
 
 
+
+
 export default function CardCategories () {
+
+
+
+  
 
     return (
 
@@ -21,7 +27,7 @@ export default function CardCategories () {
                   <span><p>Half Hair</p></span>
                 </div>
                 <div className="love-card">
-                  <a href="#"><img src="./heart.png" alt="" /></a>
+                  <a href="#"><img  src="./heart.png" alt="" /></a>
                 </div>
               </div>
 
