@@ -1,4 +1,5 @@
 
+import ArrowRight from "./components/arrow-right";
 import CardCategories from "./components/card-categories";
 import CardSellers from "./components/card-sellers";
 import Headertopo from "./components/header";
@@ -26,7 +27,7 @@ export default function App() {
                                 by combining and customizing utility classes..</p>
                         </div>
                         <div>
-                            <button>See All</button>
+                            <button className="button-showcase">See More <ArrowRight/> </button>
                         </div>
                     </div>
 
@@ -35,25 +36,25 @@ export default function App() {
                             <img src="./card-sellers1.png" alt="" />
                         </div>
                         <div className="img-showcasee">
-                            <img  src="./img-monkey1.png" alt="" />
+                            <img  src="./card1.png" alt="" />
+                        </div>
+                        <div className="img-showcasee">
+                            <img src="./img-monkey3.png" alt="" />
+                        </div>
+                        <div className="img-showcasee">
+                            <img src="./card4.png" alt="" />
+                        </div>
+                        <div className="img-showcasee">
+                            <img src="./card5.png" alt="" />
                         </div>
                         <div className="img-showcasee">
                             <img src="./img-monkey1.png" alt="" />
                         </div>
                         <div className="img-showcasee">
-                            <img src="./img-monkey1.png" alt="" />
+                            <img src="./card-sellers3.png" alt="" />
                         </div>
                         <div className="img-showcasee">
-                            <img src="./img-monkey1.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./img-monkey1.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./img-monkey1.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./img-monkey1.png" alt="" />
+                            <img src="./card-sellers8.png" alt="" />
                         </div>
                         
 
