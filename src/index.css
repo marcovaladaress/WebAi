@@ -79,6 +79,11 @@ body {
 }
 
 
+
+
+
+
+
 .container {
 
     max-width: 1400px;
@@ -99,6 +104,8 @@ body {
     margin: 0 auto;
 
 }
+
+
 
 .container-info {
     align-items: center;
@@ -529,6 +536,12 @@ body {
 
 
 
+
+
+
+
+/*-----------------INICIO SHOWCASE----------------*/
+
 .container-showcase {
 
     max-width: 1236px;
@@ -547,6 +560,7 @@ body {
 
 .title-showcase {
     max-width: 500px;
+
     & h1 {
         color: white;
         font-size: 2.25rem;
@@ -561,7 +575,7 @@ body {
         line-height: 1.25rem;
         color: white;
         font-weight: 500;
-        
+
     }
 }
 
@@ -585,27 +599,28 @@ body {
 
 
 .container-img-showcase {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 1.175rem;
-    border-radius: 6rem;
-   
+
+
 }
 
 .img-showcasee {
 
 
     overflow: hidden;
-  
+
+
 
 
     & img {
-     
+
         width: 100%;
         height: 100%;
         transition: transform 0.90s ease, box-shadow 0.3s ease;
-        
+
 
 
     }
@@ -613,10 +628,171 @@ body {
 
 
 
-.img-showcasee>img:hover{
+.img-showcasee>img:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+/*-----------------FIM SHOWCASE----------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------INICIO WALLET----------------*/
+
+.container-card-info {
+
+    max-width: 1236px;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.card-wallet {
+    max-width: 600px;
+    height: 280px;
+    background-color: rgb(2 6 23 / .4);
+    border-radius: .75rem;
+    padding: 1rem;
+    position: relative;
+    transition: 0.8s;
+}
+
+.card-wallet:hover {
+    background-color: #5e3f90;
+    transition: 0.8s;
+
+
+    & .icon-wallet {
+        color: white;
+    }
+
+    & .svg {
+        fill: rgb(167, 171, 174, 0.3);
+    }
+}
+
+
+
+.icon-wallet {
+    color: #6D29D9;
+    position: absolute;
+    top: 51px;
+    left: 51px;
+
+}
+
+
+
+
+
+.title-wallet {
+    margin-top: 1rem;
+    color: white;
+
+    & h1 {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding-left: .45rem;
+    }
+
+    & p {
+        margin-top: .75rem;
+        font-size: 14px;
+        padding-left: .45rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*-----------------FIM WALLET ----------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------INICIO BROWSE CATEGORIES ----------------*/
+
+
+
+
+
+
+.container-browse {
+    max-width: 1236px;
+    margin: 5rem auto;
+    color: white;
+}
+
+.categories-browse {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.title-browse {
+
+    & h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        margin-bottom: .5rem;
+    }
+
+    & p {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        max-width: 500px;
+    }
+}
+
+
+.card-browse{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    border-radius: 1rem;
+    margin: 4rem auto;
+    
+}
+
+.img-card {
+
+    overflow: hidden;
+    
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: .75rem;
+    }
+}
+
+
+
 
 
 
@@ -711,11 +887,11 @@ body {
     .container-sellers-card {
         max-width: 768px;
         margin: 0 auto;
-        
+
     }
 
-     
-   
+
+
 }
 
 
@@ -762,7 +938,7 @@ body {
 
     .infos {
 
-        margin-left: 1.45rem;
+        margin-left: 1.95rem;
 
         & h1 {
 
@@ -815,17 +991,17 @@ body {
     }
 
 
-    
+
     .container-img-showcase {
-       grid-template-columns:  repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         margin: 0 auto;
         gap: 1rem;
-        border-radius: .75rem;
+
     }
 
     .img-showcasee {
         & img {
-            border-radius:.75rem ;
+            border-radius: .75rem;
         }
     }
 
@@ -837,21 +1013,20 @@ body {
     }
 
     .title-showcase {
-            margin-left: -4rem;
+        margin-left: -4rem;
 
         & h1 {
             font-size: 2rem;
-           
+
         }
+
         & p {
             max-width: 300px;
             font-size: 13px;
         }
     }
-    
+
     .button-showcase {
         margin-left: -11rem;
     }
-    }
-
-
+}

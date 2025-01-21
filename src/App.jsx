@@ -2,9 +2,11 @@
 import ArrowRight from "./components/arrow-right";
 import CardCategories from "./components/card-categories";
 import CardSellers from "./components/card-sellers";
+import WalletCard from "./components/card-wallet";
 import Headertopo from "./components/header";
 
 import SectionMain from "./components/section-main";
+import ShowCase from "./components/show-case";
 
 
 
@@ -16,55 +18,34 @@ export default function App() {
             <SectionMain />
             <CardCategories />
             <CardSellers />
-
-
+            <ShowCase />
+            <WalletCard />
             <section>
-                <div className="container-showcase">
-                    <div className="container-title">
-                        <div className="title-showcase">
+                <div className="container-browse">
+                    <div className="categories-browse">
+                        <div className="title-browse">
                             <h1>Browse by categories</h1>
                             <p>Start working with Tailwindcss It allows you to compose complex designs
                                 by combining and customizing utility classes..</p>
                         </div>
                         <div>
-                            <button className="button-showcase">See More <ArrowRight/> </button>
+                            <button className="button-showcase">See All <ArrowRight /> </button>
                         </div>
                     </div>
 
-                    <div className="container-img-showcase">
-                        <div className="img-showcasee">
-                            <img src="./card-sellers1.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img  src="./card1.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./img-monkey3.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./card4.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./card5.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./img-monkey1.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./card-sellers3.png" alt="" />
-                        </div>
-                        <div className="img-showcasee">
-                            <img src="./card-sellers8.png" alt="" />
-                        </div>
-                        
-
+                    <div className="card-browse">
+                            <div className="img-card">
+                                <img src="./card-sellers7.png" alt="" />
+                            </div>
+                            <div className="img-card">
+                                <img src="./card-sellers7.png" alt="" />
+                            </div>
+                            <div className="img-card">
+                                <img src="./card-sellers7.png" alt="" />
+                            </div>
                     </div>
                 </div>
-
-
             </section>
-
-
 
         </>
 
