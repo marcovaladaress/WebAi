@@ -34,15 +34,19 @@ export default function App() {
                     </div>
 
                     <div className="card-browse">
-                            <div className="img-card">
-                                <img src="./card-sellers7.png" alt="" />
-                            </div>
-                            <div className="img-card">
-                                <img src="./card-sellers7.png" alt="" />
-                            </div>
-                            <div className="img-card">
-                                <img src="./card-sellers7.png" alt="" />
-                            </div>
+                       
+                        <div className="img-card">
+                        <div className="btn-container">
+                            <button className="btn-browse">Art</button>
+                        </div>
+                            <img src="./showcase.png" alt="" />
+                        </div>
+                        <div className="img-card">
+                            <img src="./img-monkey3.png" alt="" />
+                        </div>
+                        <div className="img-card">
+                            <img src="./card5.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </section>
