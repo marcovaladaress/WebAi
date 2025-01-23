@@ -10,7 +10,7 @@ export default function Headertopo(){
       </div>
       <nav className="menu-options">
         <a href="#">Home</a>
-        <a href="#">categories</a>
+        <a href="#">Categories</a>
         <a href="#">Sellers</a>
         <a href="#">Showcase</a>
         <a href="#">Faq</a>

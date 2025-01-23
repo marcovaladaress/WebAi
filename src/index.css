@@ -7,8 +7,10 @@
 }
 
 body {
-    background: radial-gradient(circle, #1b1524 0%, #2e1a47 100%);
+    background: radial-gradient(circle,  #4d1e2d , rgba(15, 23, 42, 1) );
     overflow-x: hidden;
+    height: 100vh;
+    margin: 0;
 
 
 }
@@ -87,7 +89,7 @@ body {
 .container {
 
     max-width: 1400px;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(2 6 23 / .4);
     margin: 0 auto;
     padding: 2rem;
     border-radius: 10px;
@@ -236,13 +238,17 @@ body {
     max-width: 1236px;
     margin: 1rem auto;
     justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
 }
 
 .info-contegories {
     max-width: 1236px;
     margin: 4rem auto 0;
-    padding: 1rem;
-
+    padding-right: 2rem;
+    padding-left: 2rem;
+ 
 
 
     & h2 {
@@ -261,23 +267,25 @@ body {
 }
 
 .cards {
-    gap: 1rem;
+    gap: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
 }
 
 
 .card {
-    background-color: rgb(0, 0, 0, 0.2);
-    width: 290px;
+    background-color: rgb(2 6 23 / .4); 
     height: 408px;
     border-radius: .5rem;
-
-
 }
 
 
 .card>img {
+    position: relative;
     padding: 0.8rem;
     width: 100%;
     border-radius: 1.2rem;
@@ -295,6 +303,7 @@ body {
 .users {
     gap: .5rem;
     display: flex;
+    justify-content: space-between;
     padding: 0 1rem;
     margin-top: -10px;
 
@@ -306,10 +315,18 @@ body {
     }
 }
 
+.love-card{
+    
+    & img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
 .users-information {
 
     display: flex;
-    flex-direction: column;
+    gap: 0.75rem;
 
 
     & a {
@@ -324,30 +341,22 @@ body {
     }
 }
 
-.love-card {
 
-    position: relative;
-    left: 6rem;
-
-    & img {
-        width: 14px;
-        height: 14px;
-
-    }
-
-}
 
 
 .etherium-card {
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
+
 }
 
 .icon-etherium-card {
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
+    color: #7c3aed;
+    font-weight: 600;
 
 }
 
@@ -384,6 +393,9 @@ body {
     margin: 0 auto;
     align-items: center;
     padding-left: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
 
 
 
@@ -441,6 +453,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.125rem;
     margin: 2rem auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
 
 }
 
@@ -450,6 +464,7 @@ body {
     background-color: rgb(2 6 23 / .4);
     max-width: 400px;
     border-radius: 15px;
+    
 
 
 
@@ -546,13 +561,15 @@ body {
 
     max-width: 1236px;
     margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
 
 }
 
 .container-title {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     margin-bottom: 2.5rem;
     align-items: center;
 }
@@ -560,6 +577,7 @@ body {
 
 .title-showcase {
     max-width: 500px;
+
 
     & h1 {
         color: white;
@@ -602,8 +620,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 1.175rem;
-
+ 
 
 }
 
@@ -655,13 +672,18 @@ body {
     margin: 5rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    gap: 0.2rem;
+
+    
 
 }
 
 
 .card-wallet {
     max-width: 600px;
-    height: 280px;
+    height: auto;
     background-color: rgb(2 6 23 / .4);
     border-radius: .75rem;
     padding: 1rem;
@@ -744,6 +766,8 @@ body {
     max-width: 1236px;
     margin: 5rem auto;
     color: white;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .categories-browse {
@@ -777,14 +801,13 @@ body {
     gap: 1.5rem;
     border-radius: 1rem;
     margin: 4rem auto;
-    position: relative;
+   
   
-    
-
+}
 
 .img-card {
   
-
+    position: relative;
     overflow: hidden;
     
     & img {
@@ -799,8 +822,8 @@ body {
 .btn-container{
     position: absolute;
     z-index: 99;
-    left: 15px;
-    padding: 1rem;
+    left: 7px;
+    padding: 0.75rem;
     
 }
 
@@ -813,7 +836,7 @@ body {
     background-color: #6D29D9;
     border: none;
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     
    
 
@@ -881,13 +904,16 @@ body {
 @media (max-width: 835px) {
 
 
-
     .card {
-        margin: 0 auto;
+     
+        width: 250px;
     }
 
     .cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding-right: 2rem;
+        padding-left: 1.1rem;
+    
 
 
     }
@@ -921,6 +947,19 @@ body {
 
     }
 
+    .container-card-info{
+        gap: 0.2rem;
+    }
+
+    .container-card-info{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .container-browse{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
 
 }
@@ -931,6 +970,12 @@ body {
 
 @media (max-width: 480px) {
 
+    .card {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+   
     .container {
         padding: 0;
 
@@ -998,13 +1043,12 @@ body {
         height: 200px;
     }
 
-    .love-card {
-        display: none;
-    }
+
 
     .cards {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+    }   
+
 
     .top-sellers {
         flex-direction: column;
@@ -1021,7 +1065,10 @@ body {
         }
     }
 
-
+    .container-null {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
     .container-img-showcase {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1038,26 +1085,52 @@ body {
 
     .container-title {
         flex-direction: column;
-        padding: 0;
-        justify-content: start;
+        align-items: start;
+        
 
     }
 
     .title-showcase {
-        margin-left: -4rem;
-
+       
+        
+    
         & h1 {
             font-size: 2rem;
 
         }
 
         & p {
-            max-width: 300px;
+            max-width: 400px;
             font-size: 13px;
         }
     }
 
-    .button-showcase {
-        margin-left: -11rem;
+    
+
+
+    .container-card-info{
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+
+    .categories-browse {
+        flex-direction: column;
+     
+        
+    }
+
+    .title-browse {
+    
+      & p {
+        max-width: 370px;
+      }
+    }
+
+
+
+    .card-browse {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
     }
 }
+
