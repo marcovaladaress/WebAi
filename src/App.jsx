@@ -1,17 +1,55 @@
 
-import ArrowRight from "./components/arrow-right";
+import { useState } from "react";
 import CardCategories from "./components/card-categories";
 import CardSellers from "./components/card-sellers";
 import WalletCard from "./components/card-wallet";
 import Headertopo from "./components/header";
+import BrowseSection from "./components/icon-components/section-browse";
 
 import SectionMain from "./components/section-main";
 import ShowCase from "./components/show-case";
+import Accordion2 from "./components/accordion";
+import AccordionIcon from "./components/icon-components/accordion-icon";
+import DropDown from "./components/icon-components/dropdown";
+import ChevronUp from "./components/icon-components/chevron-up";
 
 
 
 
 export default function App() {
+
+
+
+    const data = [
+        {
+            titulo: 'Will Tou Support My languague?',
+            content: 'You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.'
+        },
+
+        {
+            titulo: 'Will Tou Support My languague?',
+            content: 'You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.'
+        },
+
+        {
+            titulo: 'Will Tou Support My languague?',
+            content: 'You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.'
+        },
+
+
+    ]
+
+    const [selected, setSelected] = useState(null)
+
+    const toggle = (i) => {
+
+        if (selected === i) {
+            return setSelected(null)
+        }
+
+        setSelected(i)
+    }
+
     return (
         <>
             <Headertopo />
@@ -20,44 +58,35 @@ export default function App() {
             <CardSellers />
             <ShowCase />
             <WalletCard />
+            <BrowseSection />
+
             <section>
-                <div className="container-browse">
-                    <div className="categories-browse">
-                        <div className="title-browse">
-                            <h1>Browse by categories</h1>
-                            <p>Start working with Tailwindcss It allows you to compose complex designs
-                                by combining and customizing utility classes..</p>
-                        </div>
-                        <div>
-                            <button className="button-showcase">See All <ArrowRight /> </button>
-                        </div>
+
+                <div className="title-faqs">
+                    <h1>Faqs</h1>
+                    <p>Start working with Tailwindcss It allows you to compose complex designs
+                        by combining and customizing utility classes..
+                    </p>
+                </div>
+                <div className="container-accordion">
+                    <div className="accordion">
+                        {data.map((item, i) => (
+                            <div className="item" key={i}>
+                                <div className="titulo" onClick={() => toggle(i)}>
+                                    <div className="accordion-title">
+                                        <AccordionIcon />
+                                        <h2>{item.titulo}</h2>
+                                    </div>
+                                    <span>{selected === i ? <ChevronUp/> : <DropDown/>}</span>
+                                </div>
+                                <div className={selected === i ? 'content show' : 'content'}>
+                                    <p> {item.content}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
 
-                    <div className="card-browse">
-
-                        <div className="img-card">
-                            <div className="btn-container">
-                                <button className="btn-browse">Art</button>
-                            </div>
-                            <img src="./showcase.png" alt="" />
-                        </div>
-
-
-                        <div className="img-card">
-                            <div className="btn-container">
-                                <button className="btn-browse">Music</button>
-                            </div>
-                            <img src="./img-monkey3.png" alt="" />
-                        </div>
-
-
-                        <div className="img-card">
-                            <div className="btn-container">
-                                <button className="btn-browse">Uitily</button>
-                            </div>
-                            <img src="./card5.png" alt="" />
-                        </div>
-                    </div>
+                    <Accordion2 />
                 </div>
             </section>
 

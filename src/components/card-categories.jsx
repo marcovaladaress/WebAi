@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 
 
@@ -29,7 +30,7 @@ export default function CardCategories() {
                 </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+                <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
@@ -58,7 +59,7 @@ export default function CardCategories() {
                 </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+              <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
@@ -87,7 +88,7 @@ export default function CardCategories() {
                 </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+              <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
@@ -116,7 +117,7 @@ export default function CardCategories() {
                   </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+              <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
@@ -144,7 +145,7 @@ export default function CardCategories() {
                 </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+              <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
@@ -172,7 +173,7 @@ export default function CardCategories() {
                   </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+              <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
@@ -201,7 +202,7 @@ export default function CardCategories() {
                 </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+              <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
@@ -231,7 +232,7 @@ export default function CardCategories() {
                   </div>
               </div>
               <div className="love-card">
-                <a href="#"><img src="./heart.png" alt="" /></a>
+                <a href="#"><i class="fa-solid fa-heart heart"></i></a>
               </div>
             </div>
 
