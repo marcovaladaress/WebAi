@@ -1,4 +1,4 @@
-import ArrowRight from "./arrow-right";
+import ArrowRight from "./icon-components/arrow-right";
 
 export default function ShowCase(){
 
