@@ -808,7 +808,7 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
     border-radius: 1rem;
-    margin: 4rem auto;
+    margin: 5rem auto;
 
 
 }
@@ -898,6 +898,7 @@ body {
     padding-right: 2rem;
     padding-left: 2rem;
     margin-bottom: 2rem;
+ 
 
     & h1 {
         color: white;
@@ -1024,6 +1025,7 @@ body {
 .container-titleblog {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     & h1 {
         font-size: 2.5rem;
@@ -1138,6 +1140,134 @@ body {
 
 
 
+.footer{
+    background-color: rgb(2 6 23 / .4);
+
+}
+
+.container-footer{
+    max-width: 1336px;
+    margin: 0 auto;
+  
+    
+    
+   
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+.follows{
+ 
+    max-width: 300px;
+ 
+    & p {
+        font-weight: 500;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        max-width: 20rem;
+        color: white;
+        margin-top: 0.54rem;
+    }
+
+    & h5 {
+        font-weight: 500;
+        font-size: 1rem;
+        list-style: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    & img {
+        width: 150px;
+
+    }
+}
+
+.container-redes{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    
+
+}
+
+
+.redes-sociais{
+    list-style: none;
+    transition: .8s;
+   
+
+    & i {
+        color: white;
+        border: 1px solid rgba(132, 131, 131, 0.806);
+        padding: 0.5rem;
+        border-radius: .25rem;
+    }
+    
+}
+
+.redes-sociais:hover{
+    background-color: #6D29D9;
+}
+
+
+.container-information {
+   width: 66%;
+}
+
+.information-footer {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+   
+}
+
+.list-information {
+    
+    & ul {
+        list-style: none;
+      
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        
+       
+    }
+
+    & h5 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: #e2e8f0;
+        font-weight: 600;
+    }
+
+    & a {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        text-decoration: none;
+        color:#f1f5f9 ;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        transition: .3s;
+    }
+}
+
+.link-footer:hover{
+    color: #6D29D9;
+}
+
+
+
 
 
 
@@ -1189,7 +1319,7 @@ body {
     }
 
     .card-blog {
-        width: 900px;
+        width: 90%;
         margin-bottom: 1rem;
         margin: 0 auto;
     }
@@ -1445,5 +1575,34 @@ body {
     .card-browse {
         grid-template-columns: 1fr 1fr;
         margin-top: 2rem;
+    }
+
+    .container-blog{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    
+    .container-titleblog{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .content-footer{
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .follows {
+        margin-left: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .information-footer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-left: 1rem;
+        
     }
 }

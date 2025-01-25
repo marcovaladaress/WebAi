@@ -5,7 +5,6 @@ import CardSellers from "./components/card-sellers";
 import WalletCard from "./components/card-wallet";
 import Headertopo from "./components/header";
 import BrowseSection from "./components/section-browse";
-
 import SectionMain from "./components/section-main";
 import ShowCase from "./components/show-case";
 import Accordion2 from "./components/accordion";
@@ -143,6 +142,138 @@ export default function App() {
                     </div>
                 </div>
             </section>
+
+
+            <footer className="footer">
+                    <div className="container-footer">
+                        <div className="content-footer">
+                            <div className="follows">
+                                <a href="#"><img src="./logo.png" alt="" /></a>
+                                <p>Start working with Tailwindcss It allows you to compose complex designs by combining and customizing utility classes.</p>
+                                <h5>Follow Us :</h5>
+                                <ul className="container-redes">
+                                    <li className="redes-sociais">
+                                        <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li className="redes-sociais">
+                                        <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li className="redes-sociais">
+                                        <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li className="redes-sociais">
+                                        <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="container-information">
+                                <div className="information-footer">
+
+                                    <div className="list-information">
+                                       <ul>
+                                             <h5>Marketplace</h5>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                All NFts
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" className="link-footer" >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                New
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" className="link-footer"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                Arts
+                                                    </a>
+                                             </li>
+                                       </ul>
+                                        
+                                    </div>
+
+                                    <div className="list-information">
+                                       <ul>
+                                             <h5>Status</h5>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                Rangkings
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                Activity
+                                                </a>
+                                             </li>
+                                             
+                                       </ul>
+                                        
+                                    </div>
+                                 
+                                    <div className="list-information">
+                                       <ul>
+                                             <h5>Resources</h5>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                Help Center
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                Suggestions
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                Newsletter
+                                                    </a>
+                                             </li>
+                                       </ul>
+                                        
+                                    </div>
+                                 
+                                    <div className="list-information">
+                                       <ul>
+                                             <h5>Company</h5>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                About
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" className="link-footer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="circle-slash"><circle cx="12" cy="12" r="10"></circle><line x1="9" x2="15" y1="15" y2="9"></line></svg>
+                                                Carrers
+                                                </a>
+                                             </li>
+                                        
+                                       </ul>
+                                        
+                                    </div>
+                                 
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
 
         </>
 
