@@ -273,6 +273,17 @@ export default function App() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="container-policy">
+                        <div className="content-policy">
+                        <div className="webAi">
+                            <h5>2025 WebAi - Design & Crafted by Coderthemes</h5>
+                        </div>
+                        <div className="terms-condition">
+                            <h5>Terms Conditions & Policy</h5>
+                        </div>
+                        </div>
+                    </div>
             </footer>
 
         </>
