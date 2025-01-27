@@ -16,72 +16,6 @@ body {
 }
 
 
-.img-logo {
-    width: 126px;
-}
-
-
-.header-container {
-
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.50rem;
-    max-width: 1230px;
-    margin: 0 auto;
-
-}
-
-.menu-options {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
-
-
-
-    & a {
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 1rem;
-        cursor: pointer;
-        color: white;
-    }
-
-    & a:hover {
-        color: #7223cf;
-        transition: all 500ms;
-    }
-
-
-}
-
-.button-contact {
-    border-radius: 1.75rem;
-    border: none;
-    padding: 0.75rem 1.3rem;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 13px;
-    display: flex;
-    transition: 200ms ease, transform 1s ease;
-    background-color: #6D29D9;
-    color: white;
-
-}
-
-.button-contact:hover {
-    background: linear-gradient(45deg, #7223cf, #da2eb8);
-    color: white;
-    transform: translateY(10px);
-}
-
-
-
 
 
 
@@ -90,7 +24,7 @@ body {
 
     max-width: 1400px;
     background-color: rgb(2 6 23 / .4);
-    margin: 0 auto;
+    margin: 5.6rem auto;
     padding: 2rem;
     border-radius: 10px;
 
@@ -1364,6 +1298,9 @@ body {
 
 @media (max-width: 835px) {
 
+    .section-container{
+        flex-direction: column;
+    }
 
     .card {
 

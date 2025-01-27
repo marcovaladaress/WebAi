@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CardCategories from "./components/card-categories";
 import CardSellers from "./components/card-sellers";
 import WalletCard from "./components/card-wallet";
@@ -50,9 +50,32 @@ export default function App() {
         setSelected(i)
     }
 
+
+
+    const[scrollIn,setScrollIn] = useState(false)
+
+
+    useEffect(()=> {
+            function posicaoScroll(){
+               if( window.scrollY > 50) {
+                setScrollIn(true)
+               } else {
+                setScrollIn(false)
+               }
+            }
+
+            window.addEventListener('scroll', posicaoScroll)
+
+    },[]) 
+
+
+
+
+
+
     return (
         <>
-            <Headertopo />
+            <Headertopo acao={scrollIn} />
             <SectionMain />
             <CardCategories />
             <CardSellers />

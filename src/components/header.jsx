@@ -1,27 +1,56 @@
-import ArrowIcon from "./icon-components/arrow";
 
 
-export default function Headertopo(){
+import './icon-components/header.css'
+
+
+
+export default function Headertopo({acao}){
+
+
 
     return (
-    <header className="header-container">
-      <div className="logo-container">
-          <a href="#"><img className="img-logo"  src="./logo.png"  alt="" /></a>
-      </div>
-      <nav className="menu-options">
-        <a href="#">Home</a>
-        <a href="#">Categories</a>
-        <a href="#">Sellers</a>
-        <a href="#">Showcase</a>
-        <a href="#">Faq</a>
-           <a href="#">Blog</a>
-      </nav>
-       <span className="btn">
-       <button  className="button-contact" >
-           contact us
-        <ArrowIcon/>
-      </button>
-       </span>
+    <header className={acao ? 'header-cor' : ''}>
+       <nav className="nav-bar">
+            <div className="nav-img">
+                 <img src="./logo.png" alt="" />
+            </div>
+            <div className="nav-item-container">
+                <ul className="nav-item">
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Categories</a>
+                    </li>
+                    <li>
+                      <a href="#">Sellers</a>
+                    </li>
+                    <li>
+                      <a href="#">Showcase</a>
+                    </li>
+                    <li>
+                      <a href="#">Faq</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="nav-button">
+                  <button>
+                  <i class="fa-solid fa-download"></i>
+                    Download
+                    
+                  </button>
+            </div>
+
+            <div nav-mobile-icon>
+              <img src="./menu.png" alt="" />
+            </div>
+       </nav>
+
+       
     
     </header>
     )
