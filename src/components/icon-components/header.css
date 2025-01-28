@@ -47,6 +47,10 @@ header{
     }
 }
 
+.nav-link:hover{
+    color:#7c3aed;
+    transition: all ease .4s;
+}
 
 
 .nav-button>button {
@@ -70,4 +74,51 @@ header{
 
 .nav-button>button:hover{
     background-color: #6132b1;
+}
+
+
+.nav-mobile-icon>button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 830px) {
+
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+
+    .nav-mobile-icon>button{
+        display: block;
+        cursor: pointer;
+        
+        & img {
+            width: 19px;
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 470px){
+    .nav-bar{
+        padding: 1rem 1rem;
+    }
+
+
 }

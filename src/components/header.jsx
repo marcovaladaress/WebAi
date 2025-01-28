@@ -17,22 +17,22 @@ export default function Headertopo({acao}){
             <div className="nav-item-container">
                 <ul className="nav-item">
                     <li>
-                      <a href="#">Home</a>
+                      <a className="nav-link" href="#">Home</a>
                     </li>
                     <li>
-                      <a href="#">Categories</a>
+                      <a className="nav-link"  href="#">Categories</a>
                     </li>
                     <li>
-                      <a href="#">Sellers</a>
+                      <a className="nav-link"  href="#">Sellers</a>
                     </li>
                     <li>
-                      <a href="#">Showcase</a>
+                      <a className="nav-link"  href="#">Showcase</a>
                     </li>
                     <li>
-                      <a href="#">Faq</a>
+                      <a className="nav-link"  href="#">Faq</a>
                     </li>
                     <li>
-                      <a href="#">Blog</a>
+                      <a className="nav-link"  href="#">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -45,10 +45,10 @@ export default function Headertopo({acao}){
                   </button>
             </div>
 
-            <div nav-mobile-icon>
-              <img src="./menu.png" alt="" />
+            <div className="nav-mobile-icon" >
+              <button > <img src="./menu.png" alt="" /></button>
             </div>
-       </nav>
+       </nav> 
 
        
     
