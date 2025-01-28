@@ -30,5 +30,6 @@ export default function SectionMain() {
                  
                   
               </section>
+              
     )
 }
